@@ -50,6 +50,8 @@ else{
 // var salary = 30000;
 // var isBcs = true;
 
+// var nam = 'allow';
+
 // if (salary >= 30000) {
 //     console.log('ABBA KOBUL');
 
@@ -58,3 +60,25 @@ else{
 //     console.log('NO');
 
 // }
+
+// if (salary >= 30000 && isBcs == false) {
+//     console.log('kobul ');
+
+// }
+// else {
+//     console.log('no');
+
+// }
+
+var salary = 30000;
+var isBcs = false;
+
+if (salary >= 30000 || isBcs == true) {
+
+    console.log('ami kobul');
+
+}
+else {
+    console.log('no no');
+
+}
