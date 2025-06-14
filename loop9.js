@@ -111,6 +111,6 @@
 const country = 'Bangladesh';
 const district = ' jhalokathi';
 const SD = `nalcity`;
-const thana = new String('Mollarhat')
+const thana = new String('nolshiti')
 
 console.log(thana);
