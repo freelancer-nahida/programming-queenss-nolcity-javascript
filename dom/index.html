@@ -22,17 +22,20 @@
             <li class="fruits">Lichi</li>
             <li class="fruits">Watermelon</li>
             <li class="fruits">Pineapple</li>
-            <li id="moja">Dalim</li>
+            <li id="cng">Dalim</li>
 
         </ul>
     </section>
     <!-- Document object Model -->
     <main>
-        <ul>
-            <li>Tulip</li>
-            <li>Rose</li>
-            <li>Beli</li>
-        </ul>
+        <section>
+            <h1 id="flower"> Flowers I Love</h1>
+            <ul>
+                <li>Tulip</li>
+                <li>Rose</li>
+                <li>Beli</li>
+            </ul>
+        </section>
     </main>
     <!-- <script>
         console.log('nahida');
@@ -47,6 +50,7 @@
     -->
     <script>
         // const liCollection = document.getElementsByTagName('li');
+
         // // console.log(liCollection);
         // for (const li of liCollection) {
         //     console.log(li.innerText);
@@ -57,11 +61,29 @@
         //     console.log(h1.innerText);
 
         // }
-        const classEle = document.getElementsByClassName('fruits');
-        // console.log(classEle);
+        // const classEle = document.getElementsByClassName('fruits');
+        // // console.log(classEle);
 
-        const idEle = document.getElementById('moja');
-        console.log(idEle);
+        // const idEle = document.getElementById('moja');
+        // console.log(idEle);
+        // const fruit = document.querySelectorAll('.fruits');
+        // for (const fruits of fruit) {
+        //     console.log(fruits);
+
+        // }
+        // const change = document.getElementById
+        //     ('cng');
+        // change.innerText = 'pomo';
+
+        const sections = document.querySelectorAll('section');
+        for (const section of sections) {
+            section.style.border = '5px solid salmon'
+            section.style.marginBottom = '5px';
+            section.style.borderRadius = '15px';
+            section.style.backgroundColor = 'lightblue';
+            section.style.padding = '15px';
+
+        }
 
 
     </script>
