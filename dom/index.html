@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Dom</h1>
+        <h1>Ghurte Jabo</h1>
+        <h1>Assalamu Alikum</h1>
+
+    </header>
+    <section>
+        <h1>Fruits I like</h1>
+        <ul>
+            <li class="fruits">Mango</li>
+            <li class="fruits">Lichi</li>
+            <li class="fruits">Watermelon</li>
+            <li class="fruits">Pineapple</li>
+            <li id="moja">Dalim</li>
+
+        </ul>
+    </section>
+    <!-- Document object Model -->
+    <main>
+        <ul>
+            <li>Tulip</li>
+            <li>Rose</li>
+            <li>Beli</li>
+        </ul>
+    </main>
+    <!-- <script>
+        console.log('nahida');
+    </script> -->
+    <!-- <script src="script.js"></script> -->
+
+    <!-- //dom liker sistem 
+     getElementByTagName
+
+     getElementById
+
+    -->
+    <script>
+        // const liCollection = document.getElementsByTagName('li');
+        // // console.log(liCollection);
+        // for (const li of liCollection) {
+        //     console.log(li.innerText);
+
+        // }
+        // const h1Collection = document.getElementsByTagName('h1');
+        // for (const h1 of h1Collection) {
+        //     console.log(h1.innerText);
+
+        // }
+        const classEle = document.getElementsByClassName('fruits');
+        // console.log(classEle);
+
+        const idEle = document.getElementById('moja');
+        console.log(idEle);
+
+
+    </script>
+</body>
+
+</html>
