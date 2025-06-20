@@ -28,14 +28,14 @@
 
                     <!-- features star -->
                     <div class=" flex-1 pt-2">
-                        <div id=" show-addmoney" class="btn btn-lg">Add money</div>
-                        <div id=" show-cashout" class="btn btn-lg">Cash Out</div>
-                        <div id=" show-transition" class="btn btn-lg">Transition</div>
+                        <div id="show-add-money" class="btn btn-lg">Add money</div>
+                        <div id="show-cash-out" class="btn btn-lg">Cash Out</div>
+                        <div id="show-transition" class="btn btn-lg">Transition</div>
                     </div>
                     <!-- feature end -->
 
                     <!-- add money start -->
-                    <div class="hidden  hero">
+                    <div id="add-money-form" class="hidden hero">
 
                         <div class="hero-content">
 
@@ -66,8 +66,9 @@
                         </div>
                     </div>
                     <!-- add money end -->
+
                     <!-- cash out start -->
-                    <div class="hero">
+                    <div id="cash-out-form" class="hidden hero">
 
                         <div class="hero-content">
 
@@ -98,6 +99,13 @@
                         </div>
                     </div>
                     <!-- cash out end -->
+
+                    <!-- transaction start -->
+                    <div class="hidden" id="transaction-section">
+                        <h2 class="text-5xl  text-center">Transaction history</h2>
+
+                    </div>
+                    <!-- transaction  end -->
                 </div>
             </div>
         </div>
@@ -106,6 +114,7 @@
     <script src="./js/main.js"></script>
     <script src="./js/utilities.js"></script>
     <script src="./js/cashOut.js"></script>
+    <script src="./js/toggle.js"></script>
 </body>
 
 </html>

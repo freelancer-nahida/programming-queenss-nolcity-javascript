@@ -21,9 +21,20 @@ function getInputFieldById(Id) {
 }
 
 
-function getTextFieldById(Id){
+function getTextFieldById(Id) {
     const textValue = document.getElementById(Id).innerText;
 
     const textNumber = parseFloat(textValue);
-    return  textNumber;
+    return textNumber;
 }
+
+function showASectionById(Id) {
+    document.getElementById('add-money-form').classList.add('hidden');
+
+    document.getElementById('cash-out-form').classList.add('hidden');
+
+    document.getElementById('transaction-section').classList.add('hidden');
+
+    /// show section by proving parameter
+    document.getElementById(Id).classList.remove('hidden');
+} 
