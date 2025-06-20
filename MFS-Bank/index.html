@@ -14,20 +14,28 @@
     <main class="flex justify-center">
 
         <div class="mockup-phone border-primary">
-            <div class="camera"></div>
+            <div class="camera pb-10"></div>
             <div class="display">
                 <div class="artboard artboard-demo phone-1">
-                    <div class="stats shadow">
+                    <div class="stats shadow mt-7">
                         <div class="stat">
                             <div class="stat-title">Account Balance</div>
-                            <div class="stat-value">89,400</div>
-                            <div class="stat-desc">21% more than last month</div>
+                            <div id="account-balance" class="stat-value">1000</div>
                         </div>
                     </div>
                     <!--end  Account Balance -->
                     <!-- <div class="divider"></div> -->
+
+                    <!-- features star -->
+                    <div class=" flex-1 pt-2">
+                        <div class="btn btn-lg">Add money</div>
+                        <div class="btn btn-lg">Cash Out</div>
+                        <div class="btn btn-lg">Transition</div>
+                    </div>
+                    <!-- feature end -->
+
                     <!-- add money start -->
-                    <div class="hero">
+                    <div class="hidden  hero">
 
                         <div class="hero-content">
 
@@ -37,33 +45,67 @@
                                         <label class="label">
                                             <span class="label-text">Amount</span>
                                         </label>
-                                        <input type="text" placeholder="Add  Amount" class="input input-bordered"
-                                            required />
+                                        <input id="add-money" type="number" placeholder="Add  Amount"
+                                            class="input input-bordered" required />
                                     </div>
                                     <div class="form-control">
                                         <label class="label">
                                             <span class="label-text">Password</span>
                                         </label>
-                                        <input type="password" placeholder="Enter your pin" class="input input-bordered"
-                                            required />
+                                        <input id="pin-number" type="password" placeholder="Enter your pin"
+                                            class="input input-bordered" required />
                                         <label class="label">
                                             <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                                         </label>
                                     </div>
                                     <div class="form-control mt-6">
-                                        <button class="btn btn-primary">Login</button>
+                                        <button id="btn-add-money" class="btn btn-primary">Add Money</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                     <!-- add money end -->
+                    <!-- cash out start -->
+                    <div class="hero">
 
+                        <div class="hero-content">
+
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Cash Out</span>
+                                        </label>
+                                        <input id="cash-out" type="number" placeholder="cash out  Amount"
+                                            class="input input-bordered" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Password</span>
+                                        </label>
+                                        <input id="pin" type="password" placeholder="Enter your pin"
+                                            class="input input-bordered" required />
+                                        <label class="label">
+                                            <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                        </label>
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button id="btn-cashOut" class="btn btn-primary">Cash Out</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cash out end -->
                 </div>
             </div>
         </div>
 
     </main>
+    <script src="./js/main.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/cashOut.js"></script>
 </body>
 
 </html>
